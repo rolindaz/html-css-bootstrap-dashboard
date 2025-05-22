@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   </head>
-  <body style="font-family: 'Open Sans', sans-serif; font-weight: 300;">
+  <body style="font-family: 'Open Sans', sans-serif; font-weight: 400;">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -46,5 +46,136 @@
           </nav>
     </header>
     <main>
-        
+        <div class="container mt-4">
+            <form>
+                <legend class="mb-4 fs-3">
+                    Nuovo Libro
+                </legend>
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="" class="form-label">
+                                Nome Autore
+                            </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name=""
+                                id=""
+                                aria-describedby="helpId"
+                                placeholder="Inserisci il nome dell'autore"/>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="" class="form-label">
+                                Cognome Autore
+                            </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name=""
+                                id=""
+                                aria-describedby="helpId"
+                                placeholder="Inserisci il cognome dell'autore"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="" class="form-label">
+                                Titolo
+                            </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name=""
+                                id=""
+                                aria-describedby="helpId"
+                                placeholder="Inserisci il titolo del libro"/>
+                            <small id="helpId" class="form-text text-muted">
+                                Titolo versione italiana
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col">
+                        <div class="mb-4">
+                            <label for="" class="form-label text-black">
+                            Genere
+                            </label>
+                            <select class="form-select" aria-label="Genere">
+                                <option selected>
+                                    Scegli il genere
+                                </option>
+                                <option value="1">
+                                    Fantascienza
+                                </option>
+                                <option value="2">
+                                    Giallo
+                                </option>
+                                <option value="3">
+                                    Avventura
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-4">
+                            <label for="" class="form-label">
+                                Anno di Pubblicazione
+                            </label>
+                            <input
+                                type="number"
+                                class="form-control"
+                                name=""
+                                id=""
+                                aria-describedby="helpId"
+                                placeholder="Inserisci l'anno"/>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-4">
+                            <label for="" class="form-label">
+                                ISBN#
+                            </label>
+                            <input
+                                type="number"
+                                class="form-control"
+                                name=""
+                                id=""
+                                aria-describedby="helpId"
+                                placeholder="Inserisci il codice ISBN#"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-4">
+                    <hr>
+                </div>
+                <div class="mt-2 mb-4">
+                    <label for="" class="form-label">
+                        Note
+                    </label>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">
+                            Inserisci eventuali note sul libro
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">
+                        Disponibile anche in digitale
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <button type="submit" class="btn btn-primary">
+                        Aggiungi Libro
+                    </button>
+                </div>
+            </form>
+        </div>
     </main>
